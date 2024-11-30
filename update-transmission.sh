@@ -68,7 +68,7 @@ rm "$pid_file"
 
 # update openwrt port forwarding settings with uci
 
-found_line=$(uci show firewall | grep "firewall.@redirect\[\d\].name='pi-transmission'" | sed -n "s/^firewall.@redirect\[\([0-9]*\)\].*$/\1/p")
+found_line=$(uci show firewall | grep "firewall.@redirect\[\d\].name='$redirect_rule_name'" | sed -n "s/^firewall.@redirect\[\([0-9]*\)\].*$/\1/p")
 
 # if the rule is not found, then add it
 if [ -z "$found_line" ]; then
