@@ -5,7 +5,7 @@ This project contains Bash scripts designed to update port forwarding settings f
 ## Scripts
 
 - `update-transmission.sh`: Updates port forwarding settings for the Transmission BitTorrent client.
-- `update-qbittorrent.sh`: Updates port forwarding settings for the qBittorrent client. (WIP)
+- `update-qbittorrent.sh`: Updates port forwarding settings for the qBittorrent client.
 
 ## Usage
 
